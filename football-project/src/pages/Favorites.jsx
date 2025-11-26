@@ -48,7 +48,7 @@ export default function Favorites() {
           className="btn btn-danger"
           onClick={handleClearAll}
         >
-          Tümünü Temizle
+          Clear All
         </button>
       </div>
 
@@ -73,7 +73,7 @@ export default function Favorites() {
                   zIndex: 10
                 }}
               >
-                ❌ Kaldır
+                ❌ Remove
               </button>
 
               {team.strBadge && (
