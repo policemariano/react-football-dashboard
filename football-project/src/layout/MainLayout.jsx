@@ -76,23 +76,37 @@ export default function MainLayout() {
                   </NavLink>
                 </div>
                 <div className="ms-auto">
-                  <button className="btn btn-outline-secondary" onClick={handleToggleTheme} title={isDark ? "Light Theme" : "Dark Theme"}> {isDark ? "☀️" : "🌙"}</button>
+                  <button
+                    className="btn btn-outline-secondary"
+                    onClick={handleToggleTheme}
+                    title={isDark ? "Light Theme" : "Dark Theme"}
+                  >
+                    {" "}
+                    {isDark ? "☀️" : "🌙"}
+                  </button>
                 </div>
               </div>
             </div>
           </nav>
         </div>
       </header>
-      <main style={{ 
-        backgroundColor: isDark ? "#121212" : "#ffffff",
-        color: isDark ? "#ffffff" : "#000000"
-      }}>
-        <Outlet />
-      </main>
-      <footer className="d-flex justify-content-center" style={{
+      <main
+        style={{
           backgroundColor: isDark ? "#121212" : "#ffffff",
-          color: isDark ? "#ffffff" : "#000000"
-        }}>
+          color: isDark ? "#ffffff" : "#000000",
+        }}
+      >
+        <div className="min-vh-100">
+          <Outlet />
+        </div>
+      </main>
+      <footer
+        className="d-flex justify-content-center"
+        style={{
+          backgroundColor: isDark ? "#121212" : "#ffffff",
+          color: isDark ? "#ffffff" : "#000000",
+        }}
+      >
         <p>&copy; 2025 Football Project</p>
       </footer>
     </div>
