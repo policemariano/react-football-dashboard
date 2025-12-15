@@ -1,96 +1,90 @@
 # ⚽ React Football Dashboard
 
-React ve Redux ile geliştirilmiş kapsamlı bir futbol istatistik uygulaması. Ligler, takımlar, maçlar ve favori takımlarınızı takip edebileceğiniz modern bir web uygulaması.
+A comprehensive football statistics application developed with React and Redux. A modern web application where you can track leagues, teams, matches, and your favorite teams.
 
+## 🚀 Features
 
-## 🚀 Özellikler
+### 🏆 League Management
+- View popular leagues (Premier League, La Liga, Serie A, Bundesliga, etc.)
+- Track standings with league detail page
+- Real-time league information
 
-### 🏆 Lig Yönetimi
-- Popüler ligleri görüntüleme (Premier League, La Liga, Serie A, Bundesliga, vb.)
-- Lig detay sayfası ile puan durumu takibi
-- Gerçek zamanlı lig bilgileri
+### 👥 Team Tracking
+- Discover popular teams
+- Detailed team information (stadium, country, description)
+- Team badges and images
 
-### 👥 Takım Takibi
-- Popüler takımları keşfetme
-- Detaylı takım bilgileri (stadyum, ülke, açıklama)
-- Takım rozetleri ve görselleri
+### 📊 Match Tracking
+- View recently played matches
+- Match results and scores
+- League-based match filtering
 
-### 📊 Maç Takibi
-- Son oynanan maçları görüntüleme
-- Maç sonuçları ve skorlar
-- Lig bazlı maç filtreleme
+### ⭐ Favorites System
+- Save your favorite teams
+- View favorite teams on a single page
+- Remove from favorites and bulk clear
 
-### ⭐ Favori Sistem
-- Favori takımlarınızı kaydetme
-- Favori takımları tek sayfada görüntüleme
-- Favorilerden kaldırma ve toplu temizleme
+### 🎨 Theme Support
+- Dark/Light theme toggle
+- Save theme preference with LocalStorage
+- Consistent theme support across all pages
 
-### 🎨 Tema Desteği
-- Karanlık/Aydınlık tema geçişi
-- LocalStorage ile tema tercihi kaydetme
-- Tüm sayfalarda tutarlı tema desteği
+### ⚡ Performance
+- State management with Redux
+- Smart caching system for API requests
+- Data persistence with LocalStorage
 
-### ⚡ Performans
-- Redux ile state yönetimi
-- API istekleri için akıllı önbellekleme sistemi
-- LocalStorage ile veri kalıcılığı
+## 🛠️ Technologies Used
 
-## 🛠️ Kullanılan Teknolojiler
-
-- **React 18** - UI geliştirme
-- **Redux Toolkit** - State yönetimi
-- **React Router v6** - Sayfa yönlendirme
-- **Axios** - HTTP istekleri
+- **React 18** - UI development
+- **Redux Toolkit** - State management
+- **React Router v6** - Page routing
+- **Axios** - HTTP requests
 - **Bootstrap 5** - UI framework
-- **TheSportsDB API** - Futbol verileri
-- **LocalStorage** - Veri kalıcılığı
+- **TheSportsDB API** - Football data
+- **LocalStorage** - Data persistence
 
-## 📦 Kurulum
+## 📦 Installation
 
-### Gereksinimler
-- Node.js (v14 veya üzeri)
-- npm veya yarn
+### Requirements
+- Node.js (v14 or higher)
+- npm or yarn
 
-### Adımlar
+### Steps
 
-1. Repoyu klonlayın
+1. Clone the repo
 ```bash
-git clone https://github.com/Erdem-Baran/react-football-dashboard.git
+git clone [https://github.com/Erdem-Baran/react-football-dashboard.git](https://github.com/Erdem-Baran/react-football-dashboard.git)
 cd react-football-dashboard
-```
+Install dependencies
 
-2. Bağımlılıkları yükleyin
-```bash
+Bash
+
 npm install
-```
+Start the application
 
-3. Uygulamayı başlatın
-```bash
+Bash
+
 npm run dev
-```
+Open in your browser
 
-4. Tarayıcınızda açın
-```
 http://localhost:5173
-```
-
-## 📁 Proje Yapısı
-```
+📁 Project Structure
 react-football-dashboard/
 ├── src/
-│   ├── components/          # Yeniden kullanılabilir bileşenler
+│   ├── components/          # Reusable components
 │   │   ├── Error.jsx
 │   │   └── Loading.jsx
-│   ├── pages/               # Sayfa bileşenleri
+│   ├── pages/               # Page components
 │   │   ├── Home.jsx
 │   │   ├── Teams.jsx
 │   │   ├── TeamDetail.jsx
 │   │   ├── LeagueDetail.jsx
 │   │   ├── TodaysMatches.jsx
 │   │   └── Favorites.jsx
-│   ├── layout/              # Layout bileşenleri
+│   ├── layout/              # Layout components
 │   │   └── MainLayout.jsx
-│   ├── redux/               # Redux store ve slice'lar
+│   ├── redux/               # Redux store and slices
 │   │   ├── Store.jsx
 │   │   ├── League.jsx
 │   │   ├── GetTeams.jsx
@@ -105,46 +99,57 @@ react-football-dashboard/
 ├── public/
 ├── package.json
 └── README.md
-```
+🎯 Usage
+Home Page
+View popular leagues as cards
 
-## 🎯 Kullanım
+Click on a league to go to the detail page
 
-### Ana Sayfa
-- Popüler ligleri kartlar halinde görüntüleyin
-- Bir lige tıklayarak detay sayfasına gidin
+Popular Teams
+View 12 popular teams
 
-### Popüler Takımlar
-- 12 popüler takımı görüntüleyin
-- Takımlara favori ekleyin/çıkarın (❤️)
-- Takıma tıklayarak detay sayfasına gidin
+Add/remove teams to favorites (❤️)
 
-### Lig Detayları
-- Lig puan durumunu görüntüleyin
-- Takım istatistiklerini inceleyin (P, W, D, L, GD, Pts)
-- Takımlara tıklayarak detay sayfalarına gidin
+Click on a team to go to the detail page
 
-### Takım Detayları
-- Takım bilgilerini görüntüleyin
-- Stadyum, ülke ve açıklama bilgilerine erişin
-- Takımı favorilere ekleyin/çıkarın
-- Takımın ligine tıklayarak lig sayfasına gidin
+League Details
+View league standings
 
-### Son Maçlar
-- En son oynanan 15 maçı görüntüleyin
-- Maç sonuçları ve skorlar
-- Ev sahibi ve deplasman takımları
+Review team statistics (P, W, D, L, GD, Pts)
 
-### Favorilerim
-- Tüm favori takımlarınızı tek sayfada görün
-- Favorilerden tek tek veya toplu kaldırma
-- Takıma tıklayarak detay sayfasına gidin
+Click on teams to go to their detail pages
 
-### Tema Değiştirme
-- Sağ üst köşedeki butonu kullanarak tema değiştirin
-- Tercihleriniz otomatik olarak kaydedilir
+Team Details
+View team information
 
-## 🔧 Redux Store Yapısı
-```javascript
+Access stadium, country, and description details
+
+Add/remove team to favorites
+
+Click on the team's league to go to the league page
+
+Recent Matches
+View the last 15 played matches
+
+Match results and scores
+
+Home and away teams
+
+My Favorites
+See all your favorite teams on a single page
+
+Remove individually or clear all favorites
+
+Click on a team to go to the detail page
+
+Theme Switching
+Change theme using the button in the top right corner
+
+Your preferences are saved automatically
+
+🔧 Redux Store Structure
+JavaScript
+
 {
   League: {
     leagues: [],
@@ -180,44 +185,47 @@ react-football-dashboard/
   }
 }
 ```
+💾 Caching System
+Smart caching system to optimize API requests:
 
-## 💾 Önbellekleme Sistemi
+Leagues: 10 minutes
 
-API isteklerini optimize etmek için akıllı önbellekleme sistemi:
+Teams: 15 minutes
 
-- **Ligler**: 10 dakika
-- **Takımlar**: 15 dakika
-- **Takım Detayları**: 30 dakika
-- **Maçlar**: 5 dakika
-- **Lig Detayları**: 10 dakika
+Team Details: 30 minutes
 
-## ⚠️ Bilinen Sınırlamalar
+Matches: 5 minutes
 
-- **Arama Özelliği**: API rate limit kısıtlamaları nedeniyle arama özelliği eklenmemiştir
-- **API Limitleri**: TheSportsDB ücretsiz tier kullanımı nedeniyle istek sayısı sınırlıdır
-- **Canlı Skorlar**: Sadece geçmiş maç sonuçları gösterilmektedir
+League Details: 10 minutes
 
-## 🤝 Katkıda Bulunma
+⚠️ Known Limitations
+Search Feature: Search feature is not included due to API rate limit restrictions
 
-1. Bu repoyu fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeniOzellik`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Yeni özellik eklendi'`)
-4. Branch'inizi push edin (`git push origin feature/yeniOzellik`)
-5. Pull Request oluşturun
+API Limits: Request count is limited due to TheSportsDB free tier usage
 
+Live Scores: Only past match results are shown
 
-## 👤 İletişim
+🤝 Contributing
+Fork this repo
 
-Erdem Baran - [@Erdem-Baran](https://github.com/Erdem-Baran)
+Create a new branch (git checkout -b feature/newFeature)
 
-Proje Linki: [https://github.com/Erdem-Baran/react-football-dashboard](https://github.com/Erdem-Baran/react-football-dashboard)
+Commit your changes (git commit -m 'Added new feature')
 
-## 🙏 Teşekkürler
+Push your branch (git push origin feature/newFeature)
 
-- [TheSportsDB](https://www.thesportsdb.com/) - Futbol verileri için
-- [Bootstrap](https://getbootstrap.com/) - UI bileşenleri için
-- [React](https://reactjs.org/) - Framework için
+Create a Pull Request
 
----
+👤 Contact
+Erdem Baran - @Erdem-Baran
 
-⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
+Project Link: https://github.com/Erdem-Baran/react-football-dashboard
+
+🙏 Acknowledgements
+TheSportsDB - For football data
+
+Bootstrap - For UI components
+
+React - For the framework
+
+⭐ Don't forget to star this project if you liked it!
